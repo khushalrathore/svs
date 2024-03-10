@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="/assets/css/theme.css">
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <title>SiddhiVinayakSoft</title>
+  <style>
+  @media (min-width: 768px) {
+     .x4grid{
+      
+      width: 60%;height:100%;
+    }
+    
+  }
+    @media (max-width: 768px) {
+
+      .userSelect,
+      header {
+        padding-inline: 1.25rem !important
+      }
+
+      .logo {
+        display: none !important;
+      }
+
+      header {
+
+        justify-content: center !important;
+      }
+
+      .section-banner-heading {
+        font-size: 35px !important;
+      }
+
+      .section-banner-description {
+        font-size: 14px !important;
+      }
+
+      .section-banner-btn {
+        font-size: 12px !important;
+      }
+
+      .quickServices {
+        display: none !important;
+      }
+      .x4grid{
+   gap:1 !important;
+   grid-template-columns: repeat(4,1fr) !important;
+   scale: 0.6;
+    transform: translate(-30%, -30%);
+    } 
+    .x4grid-heading{
+    grid-template-columns: repeat(4,1fr);
+      width: unset !important;height:unset !important;
+
+    } 
+    .x4grid-heading:hover{
+   scale:0.6 !important;
+    }
+
+
+    }
+    .howwework{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .smallBanner{
+      padding: 2rem; 
+      align-items: center;
+      display: flex;
+      flex-direction: column;z-index: 0;
+      border-radius: 0.3rem;
+      position: relative;
+    }
+    .smallBanner::after{
+      /* background: url(/assets/media/hero.jpg)no-repeat right center; */
+      background: linear-gradient(45deg,#FF5733, orange);
+      content: '';
+      border-radius: 0.3rem;
+      inset: 0;
+      z-index: -2;
+      position: absolute;
+    }
+    .smallBanner::before{
+      background: url(/assets/media/noise.webp)repeat center center;
+      content: '';
+      border-radius: 0.3rem;
+      inset: 0;
+      z-index:-1;
+      position: absolute;
+    }
+    .smallBannerHeading{
+      font-size: 35px;max-width: 14ch;text-align: center;
+      font-weight: 600;
+      margin-block:1rem;
+    }
+    .smallBannerDescription{
+      text-align: center;
+      font-size: 18px;color: black;
+      font-weight: 600;
+    }
+    .howwework{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      gap:1rem
+    }
+    .x4grid{
+      display:grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 1rem;
+    }
+    .x4grid-heading{
+    background: whitesmoke;
+    padding: 1.75rem 1rem;
+    transition: all 0.25s;
+    position: relative;border:2px solid rgba(0, 0, 0, 0.328);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.0243);
+    } 
+    .x4grid-heading:hover{
+   scale:1.01;
+    }
+    .x4grid-heading::after{
+      content: '#';
+      position: absolute;
+      top:0;right:0;
+      background: linear-gradient(orange,orangered);
+      color:white;width:3rem;height:3rem;text-align: center;vertical-align: middle;
+      font-size:2rem;border-bottom-left-radius: 500%;
+    }
+    .x4grid-heading:nth-child(1):after{
+      content: '1';
+    }.x4grid-heading:nth-child(2):after{
+      content: '2';
+    }.x4grid-heading:nth-child(3):after{
+      content: '3';
+    }.x4grid-heading:nth-child(4):after{
+      content: '4';
+    }
+  </style>
+</head>
+
+<body>
+  <div class="userSelect">
+    <div class="userSelectCategory">
+      <a class="userSelectItem" href="/">INDIVIDUAL</a>
+      <a class="userSelectItem" href="/">BUSINESS</a>
+      <a class="userSelectItem" href="/">INVESTOR</a>
+    </div>
+    <div class="explore">
+      <a class="userSelectItem explore" href="/">Explore</a>
+    </div>
+  </div>
+
+  <header>
+    <a href="/">
+      <div class="logo"></div>
+    </a>
+    <nav>
+      <a href="/">
+        <div class="navItem">Home</div>
+      </a>
+      <div class="navItem" id="services">Services</div>
+      <div class="navItem" id="company">Company</div>
+      <div class="servicesDiv" id="servicesDiv">
+
+        <ul class="servicesDivItem"><a href="services/electricity-bill.html">Electricity Bill</a>
+
+          <div class="electricity">
+            <a href="/services/electricity-bill/wbsedcl.html" style="display: flex;">
+              <li class="miniServices">WBSEDCL</li>
+            </a>
+
+            <a href="/services/electricity-bill/msedcl.html">
+              <li class="miniServices">MSEDCL</li>
+            </a>
+            <a href="/services/electricity-bill/pspcl.html">
+              <li class="miniServices">PSPCL</li>
+            </a>
+            <a href="/services/electricity-bill/uppcl-rural.html">
+              <li class="miniServices">UPPCL RURAL</li>
+            </a>
+            <a href="/services/electricity-bill/tneb.html">
+              <li class="miniServices">TNEB</li>
+            </a>
+            <a href="/services/electricity-bill/uhbvn.html">
+              <li class="miniServices">UHBVN</li>
+            </a>
+            <a href="/services/electricity-bill/apdcl.html">
+              <li class="miniServices">APDCL</li>
+            </a>
+            <a href="/services/electricity-bill/apepdcl.html">
+              <li class="miniServices">APEPDCL</li>
+            </a>
+            <a href="/services/electricity-bill/kesco.html">
+              <li class="miniServices">KESCO</li>
+            </a>
+            <a href="/services/electricity-bill/bescom.html">
+              <li class="miniServices">BESCOM</li>
+            </a>
+            <a href="/services/electricity-bill/ugvcl.html">
+              <li class="miniServices">UGVCL</li>
+            </a>
+            <a href="/services/electricity-bill/adani-electricity.html">
+              <li class="miniServices">ADANI ELECTRICITY</li>
+            </a>
+            <a href="/services/electricity-bill/mgvcl.html">
+              <li class="miniServices">MGVCL</li>
+            </a>
+
+          </div>
+        </ul>
+
+        <ul class="servicesDivItem"><a href="services/dth-recharge.html">DTH Recharge</a>
+          <div class="dth">
+            <a href="/services/dth/tataplay.html">
+              <li class="miniServices">TATAPLAY (TATASKY)</li>
+            </a>
+            <a href="/services/dth/sun-direct.html">
+              <li class="miniServices">SUN DIRECT</li>
+            </a>
+            <a href="/services/dth/airtel-dth.html">
+              <li class="miniServices">AIRTEL DTH</li>
+            </a>
+            <a href="/services/dth/dish-tv.html">
+              <li class="miniServices">DISH TV</li>
+            </a>
+            <a href="/services/dth/d2h-dth.html">
+              <li class="miniServices">D2H DTH</li>
+            </a>
+          </div>
+        </ul>
+
+        <ul class="servicesDivItem"><a href="services/mobile-recharge.html">Mobile Recharge</a>
+          <div class="mobileRecharge">
+            <a href="services/mobile-recharge/airtel-recharge.html">
+              <li class="miniServices">AIRTEL RECHARGE</li>
+            </a>
+            <a href="services/mobile-recharge/bsnl-recharge.html">
+              <li class="miniServices">BSNL RECHARGE</li>
+            </a>
+            <a href="services/mobile-recharge/jio-recharge.html">
+              <li class="miniServices">JIO RECHARGE</li>
+            </a>
+            <a href="services/mobile-recharge/vi-recharge.html">
+              <li class="miniServices">VI RECHARGE</li>
+            </a>
+          </div>
+        </ul>
+
+        <ul class="servicesDivItem"><a href="services/mobile-postpaid.html">Mobile Postpaid</a>
+          <div class="mobilePostpaid">
+            <a href="services/mobile-postpaid/bsnl-postpaid.html">
+              <li class="miniServices">BSNL POSTPAID</li>
+            </a>
+            <a href="services/mobile-postpaid/jio-postpaid.html">
+              <li class="miniServices">JIO POSTPAID</li>
+            </a>
+            <a href="services/mobile-postpaid/airtel-postpaid.html">
+              <li class="miniServices">AIRTEL POSTPAID</li>
+            </a>
+            <a href="services/mobile-postpaid/vi-postpaid.html">
+              <li class="miniServices">VI POSTPAID</li>
+            </a>
+
+          </div>
+        </ul>
+        <ul class="servicesDivItem"><a href="services/fastag.html">FASTag</a>
+          <div class="fastag">
+            <a href="services/fastag/sbi-fastag.html">
+              <li class="miniServices">SBI FASTAG</li>
+            </a>
+            <a href="services/fastag/icici-fastag.html">
+              <li class="miniServices">ICICI FASTAG</li>
+            </a>
+            <a href="services/fastag/ihmcl-fastag.html">
+              <li class="miniServices">IHMCL FASTAG</li>
+            </a>
+            <a href="services/fastag/paytm-fastag.html">
+              <li class="miniServices">PAYTM FASTAG</li>
+            </a>
+            <a href="services/fastag/equitas-fastag.html">
+              <li class="miniServices">EQUITAS FASTAG</li>
+            </a>
+            <a href="services/fastag/federal-fastag.html">
+              <li class="miniServices">FEDERAL FASTAG</li>
+            </a>
+            <a href="services/fastag/hdfc-fastag.html">
+              <li class="miniServices">HDFC FASTAG</li>
+            </a>
+            <a href="services/fastag/axis-fastag.html">
+              <li class="miniServices">AXIS FASTAG</li>
+            </a>
+
+          </div>
+        </ul>
+        <ul class="servicesDivItem"><a href="services/piped-gas.html">Piped Gas</a>
+          <div class="pipedGas">
+            <a href="/services/piped-gas/mahanagar-gas.html">
+              <li class="miniServices">MAHANAGAR GAS</li>
+            </a>
+            <a href="/services/piped-gas/igl.html">
+              <li class="miniServices">IGL</li>
+            </a>
+            <a href="/services/piped-gas/adani-gas.html">
+              <li class="miniServices">ADANI GAS</li>
+            </a>
+            <a href="/services/piped-gas/torrent-gas.html">
+              <li class="miniServices">TORRENT GAS</li>
+            </a>
+            <a href="/services/piped-gas/gujarat-gas.html">
+              <li class="miniServices">GUJARAT GAS</li>
+            </a>
+            <a href="/services/piped-gas/avantika-gas.html">
+              <li class="miniServices">AVANTIKA GAS</li>
+            </a>
+          </div>
+        </ul>
+        <ul class="servicesDivItem"><a href="services/landline.html">Landline</a>
+          <div class="landline">
+            <a href="services/landline/airtel.html">
+              <li class="miniServices">AIRTEL</li>
+            </a>
+            <a href="services/landline/bsnl-corporate.html">
+              <li class="miniServices">BSNL CORPORATE</li>
+            </a>
+            <a href="services/landline/bsnl-consumer.html">
+              <li class="miniServices">BSNL CONSUMER</li>
+            </a>
+            <a href="services/landline/mtnl-delhi.html">
+              <li class="miniServices">MTNL DELHI</li>
+            </a>
+            <a href="services/landline/mtnl-mumbai.html">
+              <li class="miniServices">MTNL MUMBAI</li>
+            </a>
+          </div>
+        </ul>
+        <ul class="servicesDivItem"><a href="services/cylinder-booking.html">Cylinder Booking</a>
+          <div class="cylinder">
+            <a href="services/cylinder-booking/bharat-gas.html">
+              <li class="miniServices">BHARAT GAS</li>
+            </a>
+            <a href="services/cylinder-booking/hp-gas.html">
+              <li class="miniServices">HP GAS</li>
+            </a>
+            <a href="services/cylinder-booking/indane-gas.html">
+              <li class="miniServices">INDANE GAS</li>
+            </a>
+
+          </div>
+        </ul>
+
+
+
+        <ul class="servicesDivItem"><a href="services/water-bill.html">Water</a>
+          <div class="water">
+            <a href="services/water/bwssb.html">
+              <li class="miniServices">BWSSB</li>
+            </a>
+            <a href="services/water/djb.html">
+              <li class="miniServices">DJB</li>
+            </a>
+            <a href="services/water/hmwssb.html">
+              <li class="miniServices">HMWSSB</li>
+            </a>
+          </div>
+        </ul>
+
+        <ul class="servicesDivItem"><a href="services/broadband.html">Broadband</a>
+          <div class="broadband">
+            <a href="services/broadband/airtel-broadband.html">
+              <li class="miniServices">AIRTEL BROADBAND</li>
+            </a>
+            <a href="services/broadband/kerala-vision-broadband.html">
+              <li class="miniServices">KERALA VISION BROADBAND</li>
+            </a>
+            <a href="services/broadband/act-fibernet.html">
+              <li class="miniServices">ACT FIBERNET</li>
+            </a>
+          </div>
+        </ul>
+
+      </div>
+      <div class="companyDiv" id="companyDiv">
+        <a href="company/about-us.html" style="display: grid;">
+          <ul class="companyDivItem">About Us</ul>
+        </a>
+        <a href="company/careers.html" style="display: grid;">
+          <ul class="companyDivItem">Careers @SiddhiVinayak Soft
+          </ul>
+        </a>
+      </div>
+      <a href="contact.html">
+        <div class="navItem">Contact</div>
+      </a>
+
+    </nav>
+  </header>
+
+  <section>
+    <div class="noise" id="content1" style="padding-block:6rem;">
+      <p class="section-banner-heading">Quick, Real Time Response</p>
+      <p class="section-banner-description">Mobile Prepaid, Postpaid, Electricity Bill, FASTag, Landline and many more
+        services.</p> <a href="/"><button class="section-banner-btn" title="Learn More">Learn More</button></a>
+
+    </div>
+
+    <div class="noise" id="content2" style="padding-block:6rem;">
+      <p class="section-banner-heading">Fast, Simple and Secure way to pay</p>
+      <p class="section-banner-description">Make online payments or send money to any bank account in a
+        flash directly from your bank account.</p> <a href="/"><button class="section-banner-btn"
+          title="Learn More">Learn More</button></a>
+    </div>
+
+    <div class="noise" id="content3" style="padding-block:6rem;">
+      <p class="section-banner-heading">Instant, Dynamic Feedback</p>
+      <p class="section-banner-description">Top-up with lightning-fast service.</p><a href="/"><button
+          class="section-banner-btn" title="Learn More">Learn
+          More</button></a>
+    </div>
+
+    <div class="noise" id="content4" style="padding-block:6rem;">
+      <p class="section-banner-heading">Effortless Collaboration</p>
+      <p class="section-banner-description">Streamline teamwork with seamless communication.</p><a href="/"><button
+          class="section-banner-btn" title="Learn More">Learn More</button></a>
+    </div>
+
+    <div class="noise" id="content5" style="padding-block:6rem;">
+      <p class="section-banner-heading">Unmatched Efficiency</p>
+      <p class="section-banner-description">Experience unparalleled productivity with our cutting-edge services.</p><a
+        href="/"><button class="section-banner-btn" title="Learn More">Learn More</button></a>
+    </div>
+
+    <div class="controllerDiv">
+
+      <button id="prevBtn">
+      </button>
+      <button id="nextBtn">
+      </button>
+
+    </div>
+  </section>
+
+  <div class="quickServices">
+    <div class="quickServicesLayer1">
+      <div class="quickServiceBlock" style="background: #773f93;">
+        <div
+          style="background: #fff;border-radius: 50%;width:40px;height:40px;display: flex;justify-content: center;align-items: center;">
+          <div
+            style="background: url(/assets/media/flight.png)no-repeat center center;width:25px;height:25px;background-size: contain;">
+          </div>
+        </div>
+        <div class="quickServiceInfoDiv">
+          <p class="quickServiceInfoHeading">Flight Ticket</p>
+          <p class="quickServicesInfoDescription">BOOKING</p>
+        </div>
+      </div>
+
+      <div class="quickServiceBlock" style="background: #48378f;">
+        <div
+          style="background: #fff;border-radius: 50%;width:40px;height:40px;display: flex;justify-content: center;align-items: center;">
+          <div
+            style="background: url(/assets/media/bus.png)no-repeat center center;width:25px;height:25px;background-size: contain;">
+          </div>
+        </div>
+        <div class="quickServiceInfoDiv">
+          <p class="quickServiceInfoHeading">Bus Ticket</p>
+          <p class="quickServicesInfoDescription">BOOKING</p>
+        </div>
+      </div>
+
+      <div class="quickServiceBlock" style="background: #9c1f32;">
+        <div
+          style="background: #fff;border-radius: 50%;width:40px;height:40px;display: flex;justify-content: center;align-items: center;">
+          <div
+            style="background: url(/assets/media/cms.png)no-repeat center center;width:25px;height:25px;background-size: contain;">
+          </div>
+        </div>
+        <div class="quickServiceInfoDiv">
+          <p class="quickServiceInfoHeading">CMS</p>
+          <p class="quickServicesInfoDescription">COLLECT PAYMENT</p>
+        </div>
+      </div>
+
+      <div class="quickServiceBlock" style="background: #4795cb;">
+        <div
+          style="background: #fff;border-radius: 50%;width:40px;height:40px;display: flex;justify-content: center;align-items: center;">
+          <div
+            style="background: url(/assets/media/market.png)no-repeat center center;;width:25px;height:25px;background-size: contain;">
+          </div>
+        </div>
+        <div class="quickServiceInfoDiv">
+          <p class="quickServiceInfoHeading">Whole Sale</p>
+          <p class="quickServicesInfoDescription">MARKET</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="quickServicesLayer2">
+      <div class="quickServiceBlock2" style="background: #fff;flex-direction: column;padding: 0.25rem 0.75rem;">
+        <div
+          style="background: #fff;border-radius: 50%;width:40px;height:40px;display: flex;justify-content: center;align-items: center;">
+          <div
+            style="background: url(/assets/media/mobile.png)no-repeat center center;width:25px;height:25px;background-size: contain;">
+          </div>
+        </div>
+        <div class="quickServiceInfoDiv">
+          <p class="quickServicesInfoDescription2" ">Mobile</p>
+          </div>
+        </div>  
+      <div class=" quickServiceBlock2" style="background: #fff;flex-direction: column;padding: 0.25rem 0.75rem;">
+          <div
+            style="background: #fff;border-radius: 50%;width:40px;height:40px;display: flex;justify-content: center;align-items: center;">
+            <div
+              style="background: url(/assets/media/dth.png)no-repeat center center;width:25px;height:25px;background-size: contain;">
+            </div>
+          </div>
+          <div class="quickServiceInfoDiv">
+            <p class="quickServicesInfoDescription2">DTH</p>
+          </div>
+        </div>
+        <div class=" quickServiceBlock2" style="background: #fff;flex-direction: column;padding: 0.25rem 0.75rem;">
+          <div
+            style="background: #fff;border-radius: 50%;width:40px;height:40px;display: flex;justify-content: center;align-items: center;">
+            <div
+              style="background: url(/assets/media/postpaid.png)no-repeat center center;width:25px;height:25px;background-size: contain;">
+            </div>
+          </div>
+          <div class="quickServiceInfoDiv">
+            <p class="quickServicesInfoDescription2" ">Postpaid</p>
+          </div>
+        </div>
+        <div class=" quickServiceBlock2" style="background: #fff;flex-direction: column;padding: 0.25rem 0.75rem;">
+            <div
+              style="background: #fff;border-radius: 50%;width:40px;height:40px;display: flex;justify-content: center;align-items: center;">
+              <div
+                style="background: url(/assets/media/money.png)no-repeat center center;width:25px;height:25px;background-size: contain;">
+              </div>
+            </div>
+            <div class="quickServiceInfoDiv">
+              <p class="quickServicesInfoDescription2" ">Money Transfer</p>
+          </div>
+        </div>
+        <div class=" quickServiceBlock2" style="background: #fff;flex-direction: column;padding: 0.25rem 0.75rem;">
+              <div
+                style="background: #fff;border-radius: 50%;width:40px;height:40px;display: flex;justify-content: center;align-items: center;">
+                <div
+                  style="background: url(/assets/media/card.png)no-repeat center center;width:25px;height:25px;background-size: contain;">
+                </div>
+              </div>
+              <div class="quickServiceInfoDiv">
+                <p class="quickServicesInfoDescription2" ">Card Payment</p>
+          </div>
+        </div>
+        <div class=" quickServiceBlock2" style="background: #fff;flex-direction: column;padding: 0.25rem 0.75rem;">
+                <div
+                  style="background: #fff;border-radius: 50%;width:40px;height:40px;display: flex;justify-content: center;align-items: center;">
+                  <div
+                    style="background: url(/assets/media/electricity.png)no-repeat center center;width:25px;height:25px;background-size: contain;">
+                  </div>
+                </div>
+                <div class="quickServiceInfoDiv">
+                  <p class="quickServicesInfoDescription2" ">Electricity</p>
+          </div>
+        </div>
+        <div class=" quickServiceBlock2" style="background: #fff;flex-direction: column;padding: 0.25rem 0.75rem;">
+                  <div
+                    style="background: #fff;border-radius: 50%;width:40px;height:40px;display: flex;justify-content: center;align-items: center;">
+                    <div
+                      style="background: url(https://play-lh.googleusercontent.com/JCwIcGJSFkipZ4wvy3s623HYDDf_2rMTGd1fIreJIo6kXPdPOWNwlzHFPTie-Xt86NQ)no-repeat center center;width:25px;height:25px;background-size: contain;filter: saturate(0) brightness(0.3);">
+                    </div>
+                  </div>
+                  <div class="quickServiceInfoDiv">
+                    <p class="quickServicesInfoDescription2" ">FASTag</p>
+          </div>
+        </div>
+        <div class=" quickServiceBlock2" style="background: #fff;flex-direction: column;padding: 0.25rem 0.75rem;">
+                    <div
+                      style="background: #fff;border-radius: 50%;width:40px;height:40px;display: flex;justify-content: center;align-items: center;">
+                      <div
+                        style="background: url(/assets/media/gas.png)no-repeat center center;width:25px;height:25px;background-size: contain;">
+                      </div>
+                    </div>
+                    <div class="quickServiceInfoDiv">
+                      <p class="quickServicesInfoDescription2" ">Gas</p>
+          </div>
+        </div>
+        <div class=" quickServiceBlock2" style="background: #fff;flex-direction: column;padding: 0.25rem 0.75rem;">
+                      <div
+                        style="background: #fff;border-radius: 50%;width:40px;height:40px;display: flex;justify-content: center;align-items: center;">
+                        <div
+                          style="background: url(/assets/media/tele.png)no-repeat center center;width:25px;height:25px;background-size: contain;">
+                        </div>
+                      </div>
+                      <div class="quickServiceInfoDiv">
+                        <p class="quickServicesInfoDescription2" ">Landline</p>
+          </div>
+        </div>
+        <div class=" quickServiceBlock2" style="background: #fff;flex-direction: column;padding: 0.25rem 0.75rem;">
+                        <div
+                          style="background: #fff;border-radius: 50%;width:40px;height:40px;display: flex;justify-content: center;align-items: center;">
+                          <div
+                            style="background: url(/assets/media/water.png)no-repeat center center;width:25px;height:25px;background-size: contain;">
+                          </div>
+                        </div>
+                        <div class="quickServiceInfoDiv">
+                          <p class="quickServicesInfoDescription2" ">Water</p>
+          </div>
+        </div>
+        <div class=" quickServiceBlock2" style="background: #fff;flex-direction: column;padding: 0.25rem 0.75rem;">
+                          <div
+                            style="background: #fff;border-radius: 50%;width:40px;height:40px;display: flex;justify-content: center;align-items: center;">
+                            <div
+                              style="background: url(/assets/media/broadband.png)no-repeat center center;width:25px;height:25px;background-size: contain;">
+                            </div>
+                          </div>
+                          <div class="quickServiceInfoDiv">
+                            <p class="quickServicesInfoDescription2" ">Broadband</p>
+          </div>
+        </div>
+        <div class=" quickServiceBlock2" style="background: #fff;flex-direction: column;padding: 0.25rem 0.75rem;">
+                            <div
+                              style="background: #fff;border-radius: 50%;width:40px;height:40px;display: flex;justify-content: center;align-items: center;">
+                              <div
+                                style="background: url(https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bsnl-logo-icon.png)no-repeat center center;width:25px;height:25px;background-size: contain;filter: saturate(0) brightness(0.3);">
+                              </div>
+                            </div>
+                            <div class="quickServiceInfoDiv">
+                              <p class="quickServicesInfoDescription2" ">BSNL</p>
+          </div>
+        </div>
+        <div class=" quickServiceBlock2" style="background: #fff;flex-direction: column;padding: 0.25rem 0.75rem;">
+                              <div
+                                style="background: #fff;border-radius: 50%;width:40px;height:40px;display: flex;justify-content: center;align-items: center;">
+                                <div
+                                  style="background: url(https://1000logos.net/wp-content/uploads/2021/07/Jio-Logo.png)no-repeat center center;width:25px;height:25px;background-size: contain;filter: saturate(0) brightness(0.3);">
+                                </div>
+                              </div>
+                              <div class="quickServiceInfoDiv">
+                                <p class="quickServicesInfoDescription2" ">Jio</p>
+          </div>
+        </div>
+        <div class=" quickServiceBlock2" style="background: #fff;flex-direction: column;padding: 0.25rem 0.75rem;">
+                                <div
+                                  style="background: #fff;border-radius: 50%;width:40px;height:40px;display: flex;justify-content: center;align-items: center;">
+                                  <div
+                                    style="background: url(https://mapemond.com/wp-content/uploads/2019/05/icon.png)no-repeat center center;width:25px;height:25px;background-size: contain;filter: saturate(0) brightness(0.3);">
+                                  </div>
+                                </div>
+                                <div class="quickServiceInfoDiv">
+                                  <p class="quickServicesInfoDescription2" ">Airtel</p>
+          </div>
+        </div>
+        <div class=" quickServiceBlock2" style="background: #fff;flex-direction: column;padding: 0.25rem 0.75rem;">
+                                  <div
+                                    style="background: #fff;border-radius: 50%;width:40px;height:40px;display: flex;justify-content: center;align-items: center;">
+                                    <div style="background: url(
+                                      https://cdn.worldvectorlogo.com/logos/vi-vodafone-idea.svg)no-repeat center
+                                      center;width:25px;height:25px;background-size: contain;filter: saturate(0) brightness(0.3);">
+                                    </div>
+                                  </div>
+                                  <div class="quickServiceInfoDiv">
+                                    <p class="quickServicesInfoDescription2" ">VI</p>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+
+<div class=" whyus" style="display: flex;flex-wrap:wrap;justify-content: center;align-items: center;margin-block:1rem;padding: 2rem;background: whitesmoke;">
+<div style="scale:0.9;display: flex;flex-direction: column;background: rgb(232, 232, 232);justify-content: center;align-items: center;text-align: center;padding: 2rem 1.5rem;max-width: 35ch;border-radius: 0.2rem;">
+<div style="background: none;border-radius: 50%;width:80px;height:80px;display: flex;justify-content: center;align-items: center;">
+<div style="background: url(/assets/media/rupee.png)no-repeat center center;width:50px;height:50px;background-size: contain;">
+</div>
+</div>
+<p class="section-banner-heading" style="font-size: 20px;">Transparent Pricing</p>
+<p class="section-banner-description" style="font-size: 14px;font-weight: unset;">If consumers could see that extra costs were due to a sustainable supply chain, Everlane pricing model leads the way.</p>
+</div>
+<div style="display: flex;flex-direction: column;background: rgb(229, 229, 229);justify-content: center;align-items: center;text-align: center;padding: 2rem 1.5rem;max-width: 35ch;border-radius: 0.2rem;">
+<div style="background: none;border-radius: 50%;width:80px;height:80px;display: flex;justify-content: center;align-items: center;">
+<div style="background: url(/assets/media/encrypted.png)no-repeat center center;width:50px;height:50px;background-size: contain;">
+</div>
+</div>
+<p class="section-banner-heading" style="font-size: 20px;">Fully Encrypted</p>
+<p class="section-banner-description" style="font-size: 14px;font-weight: unset;">Encryption is a means of securing digital data using one or more mathematical techniques, along with a password or key used to decrypt the information.</p>
+</div>
+<div style="scale:0.9;display: flex;flex-direction: column;background: rgb(232, 232, 232);justify-content: center;align-items: center;text-align: center;padding: 2rem 1.5rem;max-width: 35ch;border-radius: 0.2rem;">
+<div style="background: none;border-radius: 50%;width:80px;height:80px;display: flex;justify-content: center;align-items: center;">
+<div style="background: url(/assets/media/secure.png)no-repeat center center;width:50px;height:50px;background-size: contain;">
+</div>
+</div>
+<p class="section-banner-heading" style="font-size: 20px;">Safe and Secure</p>
+<p class="section-banner-description" style="font-size: 14px;font-weight: unset;">SAFE Security provides quality security alarm systems, industry-leading monitoring services, excellence in residential and commercial support.</p>
+</div>
+</div>
+
+<div class="howwework">
+<div class="smallBanner">
+<p class="smallBannerDescription">Our Working Process</p>
+<p class="smallBannerHeading">How Our Services Will Help You to Grow Your Business</p>
+<a href="/"><button class="section-banner-btn" title="Learn More" style="margin: 0.5rem 0;">Learn More</button></a>
+</div>
+<div class="x4grid">
+<div class="x4grid-heading" style="display: flex;flex-direction: column;">
+  <div style="background: none;border-radius: 50%;width:80px;height:80px;display: flex;justify-content: center;align-items: center;">
+    <div style="background: url(/assets/media/discover.png)no-repeat center center;width:50px;height:50px;background-size: contain;">
+</div>
+</div>
+<p style="font-size: 20px;font-weight: bold;">Discovery</p>
+</div>
+
+<div class="x4grid-heading" style="display: flex;flex-direction: column;">
+  <div style="background: none;border-radius: 50%;width:80px;height:80px;display: flex;justify-content: center;align-items: center;">
+    <div style="background: url(/assets/media/plan.png)no-repeat center center;width:50px;height:50px;background-size: contain;">
+</div>
+</div>
+<p style="font-size: 20px;font-weight: bold;">Planning</p>
+</div>
+
+<div class="x4grid-heading" style="display: flex;flex-direction: column;">
+  <div style="background: none;border-radius: 50%;width:80px;height:80px;display: flex;justify-content: center;align-items: center;">
+    <div style="background: url(/assets/media/execute.png)no-repeat center center;width:50px;height:50px;background-size: contain;">
+</div>
+</div>
+<p style="font-size: 20px;font-weight: bold;">Execution</p>
+</div>
+
+<div class="x4grid-heading" style="display: flex;flex-direction: column;">
+  <div style="background: none;border-radius: 50%;width:80px;height:80px;display: flex;justify-content: center;align-items: center;">
+    <div style="background: url(/assets/media/deliver.png)no-repeat center center;width:50px;height:50px;background-size: contain;">
+</div>
+</div>
+<p style="font-size: 20px;font-weight: bold;">Deliver</p>
+</div>
+
+</div>
+</div>
+<div>
+<img src="/assets/media/reach.png" width="100%" style="filter:hue-rotate(120deg)">
+</div>
+
+<script src=" index.js">
+</script>
+</body>
+
+</html>

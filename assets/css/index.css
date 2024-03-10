@@ -662,3 +662,122 @@ section {
 
 
 /*-------------------------quickServices---------------------------------------*/
+
+
+
+
+
+
+
+/*-------------------------FOOter--------------------------------*/
+.site-footer {
+      margin: 0;
+      padding: 5rem 3rem;
+      padding-bottom: 0rem;
+      position: relative;
+    }
+
+
+    .social-icons-layout {
+      min-width: 100dvw !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      justify-content: space-between !important;
+      padding-inline: 6rem;
+      box-shadow: 0 0 10px rgba(90, 37, 0, 0.192);
+      background: rgba(230, 230, 230, 0.16);
+      box-shadow: 0 0 10px rgba(90, 37, 0, 0.192);
+      padding-block: 1rem;
+      display: flex;
+      align-items: top;
+
+    }
+
+    .social-icons-layout img {
+      filter: brightness(0);
+    }
+
+    .social-icons-layout img:hover {
+      filter: none;
+    }
+
+    .footer-super-block {
+      margin-top: 1.5rem;
+
+      display: flex;
+      justify-content: space-between;
+      gap: 40px
+    }
+
+    /* .get-in-touch {} */
+
+    .get-in-touch-heading {
+      margin: 0;
+    }
+
+    /* .get-in-touch-paragraph {} */
+
+
+
+    /* .subscibe-footer {} */
+
+    .subcribe-footer-click {
+      margin-left: 20px;
+    }
+
+    .sitemap {
+      opacity: 0.7;
+    }
+
+    .sitemap-links-group-services {
+      margin-bottom: 0;
+    }
+
+    .sitemap-links-group-resources {
+      margin-bottom: 0;
+    }
+
+    .sitemap-links-group-support {
+      margin-bottom: 0;
+    }
+
+    .sitemap-link {
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.25s;
+      font-size: 12px;
+    }
+
+    .sitemap-link:hover {
+      color: orangered;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      font-size: 14px;
+    }
+
+    .footer-bottom-copyright {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer-bottom-privacy {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer-bottom-privacy-policy {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .footer-bottom-privacy-terms {
+      text-decoration: none;
+      color: inherit;
+    }
